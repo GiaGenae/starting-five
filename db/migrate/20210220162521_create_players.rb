@@ -4,7 +4,7 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.string :name
       t.integer :number
       t.string :position
-      t.decimal :rating
+      t.integer :rating
 
       t.timestamps null: false
     end

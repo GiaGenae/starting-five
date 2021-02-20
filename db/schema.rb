@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_02_20_163711) do
     t.string "name"
     t.integer "number"
     t.string "position"
-    t.decimal "rating"
+    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
