@@ -3,4 +3,5 @@ class Team < ActiveRecord::Base
     belongs_to :coach, class_name: "User"
     has_many :rosters
     has_many :players, through: :rosters
+    
 end
