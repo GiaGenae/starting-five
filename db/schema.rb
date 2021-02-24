@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_02_20_163711) do
     t.string "name"
     t.integer "number"
     t.string "position"
-    t.integer "rating"
+    t.decimal "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 2021_02_20_163711) do
   create_table "teams", force: :cascade do |t|
     t.text "public_key"
     t.text "private_key"
-    t.text "team_name"
     t.integer "coach_id"
     t.string "password_digest"
     t.string "api_key"
